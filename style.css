@@ -111,9 +111,13 @@ nav{
     .show-links {
         height: 10rem;
       }
+      .links{
+        padding: 0px;
+      }
   }
   .logo {
     height: 40px;
   }
 
+  
   
