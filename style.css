@@ -51,7 +51,7 @@ nav{
     letter-spacing: 0.1rem;
     display: block;
     padding: 0.5rem 1rem;
-    transform: all linear 0.3s;
+    transition: all linear 0.3s;
 }
 .links a:hover{
     background: hsl(205,86%,81%);
@@ -61,7 +61,7 @@ nav{
 .links {
     height: 0;
     overflow: hidden;
-    transition: var(--transition);
+    transition: all linear 0.3s;
   }
   .social-icons {
     display: none;
@@ -99,13 +99,21 @@ nav{
     }
     .social-icons a {
       margin: 0 0.5rem;
-      color: var(--clr-primary-5);
+      color: hsl(205,78%,60%);
       transition: var(--transition);
     }
     .social-icons a:hover {
-      color: var(--clr-primary-7);
+      color:hsl(205,90%,76%);
     }
+    
+  }
+  @media screen and (max-width: 700px){
+    .show-links {
+        height: 10rem;
+      }
   }
   .logo {
     height: 40px;
   }
+
+  
